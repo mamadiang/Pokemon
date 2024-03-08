@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PokemonsPage from './Pages/PokemonsPage';
 import GenerationPage from './Pages/GenerationPage';
 import { Nav } from 'react-bootstrap';
+import Footer from './Components/Footer';
+
 
 function App() {
   return <>
@@ -16,6 +18,7 @@ function App() {
         <Route path="/pokemons"  element={<PokemonsPage />} />
         <Route path="/generations"  element={<GenerationPage />} />
       </Routes>
+      <Footer />
       </BrowserRouter>
   </>;
 }
